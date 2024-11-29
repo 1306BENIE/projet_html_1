@@ -2,25 +2,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
+
+<!-- le corps du site -->
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Travail</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>BENIE SYLVESTRE - Portfolio</h1>
+        <p>Développeur Web | Créateur de Solutions Innovantes</p>
     </header>
+
+    <!-- la partie nav de mon site -->
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#work">Travail</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- les differentes sections du  sites-->
+    
     <main>
 
+        <!-- la section 1-->
+        <section id="home">
+            <h2>Bienvenue</h2>
+            <p>Bienvenue sur mon portfolio en ligne ! Ici, vous découvrirez mes projets, compétences et expériences.</p>
+        </section>
+
+        <!-- la section à propos-->
+        <section id="about">
+            <h2>À Propos</h2>
+
+            <!-- je décris en quelques ligne ma passion pour l'informatique-->
+            <p>
+                Informaticien polyvalent dans le développement d’application 
+                web, la résolution de problèmes techniques et la proposition des solutions modernes,
+                intuitives pour répondre aux besoins des utilisateurs. Passionné par l’innovation technique et 
+                capable de fournir des solutions éfficaces en mettant en œuvre 
+                des compétences solides en programmation, en conception de 
+                système et en collaboration interfonctionnelle.
+            </p>
+            <video controls width="600">
+                <source src="video/L'Informatique.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+        </section>
+
+        <!--Dans la section travail je montre quelques projets réalisés durant mon parcours -->
+        <section id="work">
+            <h2>Travail</h2>
+            <p>Voici un aperçu de mes projets récents :</p>
+            <div width:40 height:40>
+                <p>
+                    <img src="img/image_1.jpg" alt="Réalisation 1" height="350px" width="100%">
+                </p>
+                <p>
+                    <img src="img/image_2.jpg" alt="Réalisation 2" height="350px" width="100%">
+                </p>
+                <p>
+                    <img src="img/image_3.jpg" alt="Réalisation 3" height="350px" width="100%">
+                </p>
+            </div>
+        </section>
+
+        <!--Dans cette section pour faire un exemple de cv je vais utiliser un tableau-->
+        <section id="cv">
+            <h2>Mon CV professionnel</h2>
+            <table border="1"">
+                <thead>
+                    <tr>
+                        <th>Expérience</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Développeur Web</td>
+                        <td>Entreprise HL IMPEX - Création de sites modernes et réactifs.</td>
+                    </tr>
+                    <tr>
+                        <td>Stage en Informatique</td>
+                        <td>HL IMPEX - Participation à des projets logiciels</td>
+                    </tr>
+
+                    <tr>
+                        <td>Formation</td>
+                        <td>Bachelor en Informatique - Universté International de Cote d'Ivoire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Cette section consiste à creer un formumlaire de contact -->
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <form action="#" method="#">
+                <label for="nomPrenom">Nom & Prénom(s) :</label>
+                <input type="text" id="nom" name="nomPrenom" placeholder="Votre nom complet" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
     </main>
 
-    <footer style="background-color: aqua;">
+    <footer>
         <p>&copy;2024 BENIE SYLVESTRE; Tous droits reservés</p>
     </footer>
 </body>
